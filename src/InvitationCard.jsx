@@ -400,6 +400,23 @@ export default function InvitationCard() {
         || राम कृष्ण हरि || &nbsp; ✦ &nbsp; || गणपती बाप्पा मोरया ||
       </div>
 
+      {/* ══════════════════════════════════
+          DEVELOPED BY BRANDING
+      ══════════════════════════════════ */}
+      <footer className="brand-footer">
+        <div className="brand-footer-inner">
+          <span className="brand-footer-label">Developed with 🤍 by</span>
+          <a
+            href="https://kshanikadigital.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="brand-footer-link"
+          >
+            kshanikadigital.app
+          </a>
+        </div>
+      </footer>
+
     </div>
   );
 }

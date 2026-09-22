@@ -1096,3 +1096,66 @@ section {
     0 6px 30px rgba(0,0,0,0.35);
   background: #000;
 }
+
+/* ────────────────────────────────────
+   FOOTER CHANT
+──────────────────────────────────── */
+.dindi-footer {
+  background: var(--brown);
+}
+
+.footer-chant {
+  text-align: center;
+  padding: 18px 16px;
+  font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+  font-weight: 700;
+  color: var(--gold);
+  background: var(--brown);
+  letter-spacing: 0.04em;
+  border-top: 2px solid var(--gold);
+}
+
+/* ────────────────────────────────────
+   BRAND FOOTER — kshanikadigital.app
+──────────────────────────────────── */
+.brand-footer {
+  background: linear-gradient(180deg, var(--brown) 0%, #1a0e04 100%);
+  padding: 20px 16px 24px;
+  border-top: 1px solid rgba(200, 155, 60, 0.15);
+}
+
+.brand-footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.brand-footer-label {
+  font-size: 0.75rem;
+  color: rgba(255, 248, 231, 0.45);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.brand-footer-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--gold);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  padding: 4px 16px;
+  border: 1px solid rgba(200, 155, 60, 0.25);
+  border-radius: 20px;
+  background: rgba(200, 155, 60, 0.08);
+  transition: all 0.3s ease;
+}
+
+.brand-footer-link:hover {
+  color: var(--cream);
+  background: rgba(200, 155, 60, 0.2);
+  border-color: var(--gold);
+  box-shadow: 0 0 16px rgba(200, 155, 60, 0.25);
+  transform: translateY(-1px);
+}
+
