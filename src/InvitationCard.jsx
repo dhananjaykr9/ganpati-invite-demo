@@ -50,19 +50,10 @@ function Divider({ ornament = '❖' }) {
 
 export default function InvitationCard() {
   const audioRef = useRef(null);
-  const videoRef = useRef(null);
+
   const [playing, setPlaying] = useState(false);
 
-  /* Force video audio completely muted */
-  useEffect(() => {
-    const vid = videoRef.current;
-    if (!vid) return;
-    vid.volume = 0;
-    vid.muted = true;
-    const enforcer = () => { vid.volume = 0; vid.muted = true; };
-    vid.addEventListener('volumechange', enforcer);
-    return () => vid.removeEventListener('volumechange', enforcer);
-  }, []);
+
 
   /* Try autoplay on mount */
   useEffect(() => {
@@ -219,21 +210,7 @@ export default function InvitationCard() {
           />
         </div>
 
-        <div className="home-ganpati-video-wrap">
-          <video
-            ref={videoRef}
-            className="home-ganpati-video"
-            loop
-            autoPlay
-            muted
-            playsInline
-            preload="metadata"
-            poster={IMG_HOME_GANPATI}
-          >
-            <source src={VID_HOME_GANPATI} type="video/mp4" />
-            आपला ब्राउझर व्हिडिओ प्ले करू शकत नाही.
-          </video>
-        </div>
+
       </section>
 
       {/* ══════════════════════════════════
